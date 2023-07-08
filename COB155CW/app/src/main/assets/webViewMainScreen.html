@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <style>
+    .image-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 style="color: grey;"><b>Main Page</b></h3>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="webViewMain.html">Return To Landing Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webViewSettingsScreen.html">Settings Page Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webViewViewScreen.html">View Session Page Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webViewWeekSelectScreen.html">Week Select Page Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webViewEditScreen.html">Edit Session Page Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <p>
+      The main page holds all the current sessions from the given week (which can be found on the top bar), the sessions can be found in a list where the type of session is indicated by a corresponding icon. Within the list, the session name and date can be found. There is also the ability to filter through sessions via the search bar at the top. From the Main Page, the following pages can be accessed:
+    </p>
+    <ul>
+      <li>Week Select Screen
+        <ul>
+          <li>This can be done by clicking on the date on the top bar.</li>
+        </ul>
+      </li>
+      <li>Create Session Screen
+        <ul>
+          <li>This can be done by clicking on the + icon in the bottom right of the screen</li>
+        </ul>
+      </li>
+      <li>View Session Screen
+        <ul>
+          <li>This can be done by clicking on any of the sessions within the list.</li>
+          <li>It will give the information on the session clicked on.</li>
+        </ul>
+      </li>
+      <li>Settings Screen
+        <ul>
+          <li>This can be done by clicking on the cog icon in the top left of the screen.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <i>It should be noted that by default the date will be the current week but can be changed by going to the "Week Select Screen"</i>
+    </p>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="image-container">
+          <img src="images/MainHori.PNG" alt="mainHori">
+          <p><i>Main Screen (Regular view)</i></p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="image-container">
+          <img src="images/MainLand.PNG" alt="mainLand">
+          <p><i>Main Screen (Landscape view)</i></p>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="images/MainDark.PNG" alt="mainDark">
+      <p><i>Main Screen (Dark view)</i></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

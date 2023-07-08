@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <TextView
+        android:id="@+id/BrightnessLabel"
+        android:layout_width="144dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="16dp"
+        android:soundEffectsEnabled="false"
+        android:text="@string/settingsLightBrightness"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/LightingLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="742dp"
+        android:layout_height="27dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="monospace"
+        android:text="@string/settingsTitle"
+        android:textAlignment="center"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LightingLabel"
+        android:layout_width="144dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/color_text"
+        android:soundEffectsEnabled="false"
+        android:text="@string/settingsLight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/FeatureLabel"
+        android:layout_width="144dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:soundEffectsEnabled="false"
+        android:text="@string/settingsFeatures"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LightModeButton" />
+
+    <TextView
+        android:id="@+id/ResetLabel"
+        android:layout_width="144dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="396dp"
+        android:layout_marginTop="48dp"
+        android:soundEffectsEnabled="false"
+        android:text="@string/settingsReset"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LowBrightnessImage" />
+
+    <Button
+        android:id="@+id/LightModeButton"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:text="@string/settingsLightMode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LightingLabel" />
+
+    <Button
+        android:id="@+id/DarkModeButton"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        android:text="@string/settingsDarkMode"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/LightModeButton"
+        app:layout_constraintTop_toBottomOf="@+id/LightingLabel" />
+
+    <SeekBar
+        android:id="@+id/BrightnessSeekBar"
+        android:layout_width="223dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="40dp"
+        android:progressBackgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/HighBrightnessImage"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toEndOf="@+id/DarkModeButton"
+        app:layout_constraintTop_toBottomOf="@+id/BrightnessLabel" />
+
+    <ImageView
+        android:id="@+id/LowBrightnessImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BrightnessLabel"
+        app:srcCompat="@drawable/low_brightness" />
+
+    <ImageView
+        android:id="@+id/HighBrightnessImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BrightnessLabel"
+        app:srcCompat="@drawable/high_brightness" />
+
+    <TextView
+        android:id="@+id/SummaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/settingsFeaturesSummary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FeatureLabel" />
+
+    <TextView
+        android:id="@+id/TimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text"
+        android:layout_marginStart="48dp"
+        android:text="@string/settingsFeaturesTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SummaryLabel"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/NameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/settingsFeaturesNames"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeLabel" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/ResetSubLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ResetLabel" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/TimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/TimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@+id/SummaryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/FeatureLabel" />
+
+    <TextView
+        android:id="@+id/ResetSubLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="392dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/settingsResetRemove"
+        android:textColor="@color/color_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResetLabel" />
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Return button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:contentDescription="Save Settings"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/save" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

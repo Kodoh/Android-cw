@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/color_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.COB155CW.AppBarOverlay">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <Button
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/rounded_corners"
+        android:contentDescription="Date bar"
+        android:fontFamily="monospace"
+        android:includeFontPadding="false"
+        android:text="test"
+        android:textAlignment="center"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@null"
+        android:contentDescription="Settings"
+        android:src="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="81dp"
+        android:textColor="@color/color_text"
+        android:text="Search for sessions -"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/searchView2"
+        android:layout_width="199dp"
+        android:hint =" Search session"
+        android:textColorHint="@color/color_text"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/rounded_corners" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="78dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="496dp"
+        android:layout_marginBottom="7dp"
+        android:background="@null"
+        android:contentDescription="Add session"
+        android:src="@drawable/plus" />
+
+    <ListView
+        android:id="@+id/postListView"
+        android:layout_width="wrap_content"
+        android:layout_height="464dp"
+        android:layout_below="@+id/searchView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="97dp"
+        android:textColor="@color/color_text" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:contentDescription="User guid"
+        app:srcCompat="@drawable/user_guid" />
+
+
+</RelativeLayout>
